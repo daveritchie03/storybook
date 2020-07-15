@@ -1,0 +1,1 @@
+Locked assessment box accessible before paywall
