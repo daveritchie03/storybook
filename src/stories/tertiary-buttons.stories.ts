@@ -7,6 +7,7 @@ export default {
     component: ButtonComponent,
 };
 
+let label = 'buttons';
 let buttons = [
     {
         title: 'Watch Now',
@@ -21,16 +22,17 @@ let buttons = [
         img_url: '/assets/search.png'
     },
 ];
+let x = {'buttons': buttons}
 
 export const TertiaryButton = () => ({
     component: ButtonComponent,
     props: {
-        buttons: buttons
+        buttons: x
     },
 })
 
 TertiaryButton.story = {
     parameters: {
-        notes: { tertiarybuttons }
+        notes: { tertiarybuttons },
     },
 }

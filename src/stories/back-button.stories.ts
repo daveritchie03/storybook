@@ -1,10 +1,12 @@
 import { action } from '@storybook/addon-actions';
 import { ButtonComponent } from '../app/components/button.component';
 import backbutton from 'raw-loader!./backbutton.markdown';
+import { array, text, withKnobs, object } from '@storybook/addon-knobs';
 
 export default {
     title: 'Back Buttons',
-    component: ButtonComponent
+    decorators: [withKnobs],
+    component: ButtonComponent,
 };
 
 let buttons = [
@@ -14,15 +16,17 @@ let buttons = [
     }
 ];
 
+let x ={'buttons': buttons};
+
 export const BackButton = () => ({
     component: ButtonComponent,
     props: {
-        buttons: buttons
+        buttons: x
     },
 })
 
 BackButton.story = {
     parameters: {
-        notes: { backbutton }
+        notes: { backbutton },
     },
 }
