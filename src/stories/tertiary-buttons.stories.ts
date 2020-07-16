@@ -1,9 +1,11 @@
 import { action } from '@storybook/addon-actions';
 import { ButtonComponent } from '../app/components/button.component';
 import tertiarybuttons from 'raw-loader!./tertiarybuttons.markdown';
+import { withKnobs, object } from '@storybook/addon-knobs';
 
 export default {
     title: 'Tertiary Buttons',
+    decorators: [withKnobs],
     component: ButtonComponent,
 };
 

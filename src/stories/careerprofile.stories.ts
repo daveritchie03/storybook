@@ -1,8 +1,10 @@
 import { CareerProfileComponent } from '../app/components/careerprofile.component';
 import careerprofile from 'raw-loader!./careerprofile.markdown';
+import { withKnobs, object } from '@storybook/addon-knobs';
 
 export default ({
     title: 'Career Profile',
+    decorators: [withKnobs],
     component: CareerProfileComponent
 })
 

@@ -1,8 +1,10 @@
 import { HollandCodeComponent } from '../app/components/hollandcode.component';
 import hollandcode from 'raw-loader!./hollandcode.markdown';
+import { withKnobs, object } from '@storybook/addon-knobs';
 
 export default ({
     title: 'Holland Code',
+    decorators: [withKnobs],
     component: HollandCodeComponent
 })
 
