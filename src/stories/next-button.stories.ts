@@ -9,19 +9,17 @@ export default {
     component: ButtonComponent
 };
 
-let label = 'buttons';
 let buttons = [
     {
         title: 'Next',
         class: 'bg-green padding text-white'
     }
 ];
-let x = {'buttons': buttons};
 
 export const NextButton = () => ({
     component: ButtonComponent,
     props: {
-        buttons: x
+        buttons: object('Buttons', buttons, 'id-next')
     },
 })
 

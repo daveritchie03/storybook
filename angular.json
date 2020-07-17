@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "storybook": {
@@ -119,6 +119,15 @@
           }
         }
       }
-    }},
-  "defaultProject": "storybook"
+    }
+  },
+  "defaultProject": "storybook",
+  "cli": {
+    "analytics": "5dd7f12a-cfd7-45d3-a884-4f945c03f886"
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

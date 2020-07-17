@@ -1,124 +1,169 @@
-/* You can add global styles to this file, and also import other style files */
-@import "https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,800";
 @font-face {
-	font-family: "percolate";
-	src: url("/assets/icon/percolate.eot?-5w3um4");
-	src: url("/assets/icon/percolate.eot?#iefix5w3um4") format("embedded-opentype"), url("/assets/icon/percolate.woff?5w3um4") format("woff"), url("/assets/icon/percolate.ttf?5w3um4") format("truetype"), url("/assets/icon/percolate.svg?5w3um4") format("svg");
-	font-weight: normal;
-	font-style: normal;
+  font-family: "percolate";
+  src: url("/assets/icon/percolate.eot?-5w3um4");
+  src: url("/assets/icon/percolate.eot?#iefix5w3um4") format("embedded-opentype"), url("/assets/icon/percolate.woff?5w3um4") format("woff"), url("/assets/icon/percolate.ttf?5w3um4") format("truetype"), url("/assets/icon/percolate.svg?5w3um4") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
+
 html {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
 body {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
 button {
-	cursor: pointer;
-	border: 0;
-	outline: none;
+  cursor: pointer;
+  border: 0;
+  outline: none;
 }
+
 .primary {
-	background-color: #553c9a;
+  background-color: #553c9a;
 }
+
 .secondary {
-	background-color: #d53f8c;
+  background-color: #d53f8c;
 }
+
 .tertiary {
-	background-color: #38a169;
+  background-color: #38a169;
 }
+
 .bg-white {
-	background-color: white;
+  background-color: white;
 }
+
 .bg-pink {
-	background-color: #d53f8c;
+  background-color: #d53f8c;
 }
+
 .bg-green {
-	background-color: #38a169;
+  background-color: #38a169;
 }
+
 .bg-light-pink {
-	background-color: #fed8e2;
+  background-color: #fed8e2;
 }
+
 .text-pink {
-	color: #d53f8c;
+  color: #d53f8c;
 }
+
 .text-white {
-	color: white;
+  color: white;
 }
+
 .padding {
-	padding: 1% 3%;
+  padding: 10px 30px;
 }
+
 .padding-x {
-	padding: 2px 3%;
+  padding: 2px 30px;
 }
+
 .margin {
-	margin: 2%;
+  margin: 20px;
 }
+
 .border {
-	border: 1px solid black;
+  border: 1px solid black;
 }
+
 .card {
-	padding: 3%;
+  padding: 15px 20px;
 }
+
 .careerprofile {
-	width: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
-.ml-auto {
-	margin-left: auto;
-}
+
 .mr-1 {
-	margin-right: 10px;
+  margin-right: 10px;
 }
+
 .border-radius {
-	border-radius: 10px;
+  border-radius: 10px;
 }
+
 .text-center {
-	text-align: center;
+  text-align: center;
 }
+
 .holland-code {
-	width: 40%;
+  width: 400px;
 }
+
+.holland-code .flex-display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.holland-code .flex-display .ml-auto {
+  margin-left: auto;
+}
+
+.holland-code .mt-3 {
+  margin-top: 30px;
+}
+
 .text-muted {
-	color: #6c757d;
+  color: #6c757d;
 }
+
 .bg-purple {
-	background-color: #44337a;
+  background-color: #44337a;
 }
+
 .text-light-purple {
-	color: #e9d8fd;
+  color: #e9d8fd;
 }
+
 .active {
-	border-left: 2px solid white;
-	color: white;
+  border-left: 2px solid white;
+  color: white;
 }
+
 .padding-left {
-	padding-left: 10%;
+  padding-left: 20px;
 }
+
 .padding-y {
-	padding: 2% 0;
+  padding: 20px 0;
 }
+
 .missioncontrol {
-	width: 20%;
+  width: 200px;
 }
+
 .margin-y {
-	margin: 2% 0;
+  margin: 20px 0;
 }
-.flex-display {
-	display: flex;
-	align-items: center;
-}
+
 .w-auto {
-	width: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
+
 input[type="search"] {
-	padding: 10px;
-	border-radius: 50px;
-	border: 1px solid black;
-	background-image: url("./assets/search.png");
-	background-repeat: no-repeat;
-	background-position: 5% 50%;
-	text-indent: 50px;
-	outline: none;
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid black;
+  background-image: url("./assets/search.png");
+  background-repeat: no-repeat;
+  background-position: 50px 50px;
+  text-indent: 50px;
+  outline: none;
 }
+/*# sourceMappingURL=styles.css.map */

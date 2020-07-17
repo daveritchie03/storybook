@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "percolate";
+    src: url("/assets/icon/percolate.eot?-5w3um4");
+    src: url("/assets/icon/percolate.eot?#iefix5w3um4") format("embedded-opentype"),
+        url("/assets/icon/percolate.woff?5w3um4") format("woff"),
+        url("/assets/icon/percolate.ttf?5w3um4") format("truetype"),
+        url("/assets/icon/percolate.svg?5w3um4") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+button {
+    cursor: pointer;
+    border: 0;
+    outline: none;
+}
+.primary {
+    background-color: #553c9a;
+}
+.secondary {
+    background-color: #d53f8c;
+}
+.tertiary {
+    background-color: #38a169;
+}
+.bg-white {
+    background-color: white;
+}
+.bg-pink {
+    background-color: #d53f8c;
+}
+.bg-green {
+    background-color: #38a169;
+}
+.bg-light-pink {
+    background-color: #fed8e2;
+}
+.text-pink {
+    color: #d53f8c;
+}
+.text-white {
+    color: white;
+}
+.padding {
+    padding: 10px 30px;
+}
+.padding-x {
+    padding: 2px 30px;
+}
+.margin {
+    margin: 20px;
+}
+.border {
+    border: 1px solid black;
+}
+.card {
+    padding: 15px 20px;
+}
+.careerprofile {
+    width: fit-content;
+}
+.mr-1 {
+    margin-right: 10px;
+}
+.border-radius {
+    border-radius: 10px;
+}
+.text-center {
+    text-align: center;
+}
+.holland-code {
+    width: 400px;
+    .flex-display {
+        display: flex;
+        align-items: center;
+        .ml-auto {
+            margin-left: auto;
+        }
+    }
+    .mt-3 {
+        margin-top: 30px;
+    }
+}
+.text-muted {
+    color: #6c757d;
+}
+.bg-purple {
+    background-color: #44337a;
+}
+.text-light-purple {
+    color: #e9d8fd;
+}
+.active {
+    border-left: 2px solid white;
+    color: white;
+}
+.padding-left {
+    padding-left: 20px;
+}
+.padding-y {
+    padding: 20px 0;
+}
+.missioncontrol {
+    width: 200px;
+}
+.margin-y {
+    margin: 20px 0;
+}
+.w-auto {
+    width: fit-content;
+}
+input[type="search"] {
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid black;
+    background-image: url("./assets/search.png");
+    background-repeat: no-repeat;
+    background-position: 50px 50px;
+    text-indent: 50px;
+    outline: none;
+}

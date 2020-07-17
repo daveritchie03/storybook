@@ -1,4 +1,3 @@
-import { action } from '@storybook/addon-actions';
 import { ButtonComponent } from '../app/components/button.component';
 import tertiarybuttons from 'raw-loader!./tertiarybuttons.markdown';
 import { withKnobs, object } from '@storybook/addon-knobs';
@@ -9,7 +8,6 @@ export default {
     component: ButtonComponent,
 };
 
-let label = 'buttons';
 let buttons = [
     {
         title: 'Watch Now',
@@ -24,12 +22,11 @@ let buttons = [
         img_url: '/assets/search.png'
     },
 ];
-let x = {'buttons': buttons}
 
 export const TertiaryButton = () => ({
     component: ButtonComponent,
     props: {
-        buttons: x
+        buttons: object('Buttons', buttons, 'id-tertiary')
     },
 })
 

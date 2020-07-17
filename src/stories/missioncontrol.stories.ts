@@ -8,7 +8,7 @@ export default ({
     component: MissionControlComponent
 })
 
-let buttons_list = [
+let buttons = [
     {
         title: 'Mission Control',
         state: true
@@ -22,7 +22,7 @@ let buttons_list = [
 export const MissionControl = () => ({
     component: MissionControlComponent,
     props: {
-        buttons: buttons_list
+        buttons: object('Buttons', buttons, 'Mission Control')
     }
 })
 

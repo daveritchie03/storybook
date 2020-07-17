@@ -4,8 +4,8 @@ import { Component, Input, OnInit } from '@angular/core';
     selector: 'app-hollandcode',
     template: `
     <div class="margin holland-code card border border-radius">
-        <div style="display: flex; margin-bottom: 2%; align-items: center;">
-            <h3>Holland Code Assessment</h3>
+        <div class="flex-display">
+            <h3>{{title}}</h3>
             <div class="ml-auto">
                 <img src="/assets/lock.png">
             </div>
@@ -13,7 +13,7 @@ import { Component, Input, OnInit } from '@angular/core';
         <div>
             <p>{{data}}</p>
         </div>
-        <div style="margin-top: 3%;">
+        <div class="mt-3">
             <p class="text-muted">{{footer}}</p>
         </div>
     </div>
@@ -23,6 +23,7 @@ import { Component, Input, OnInit } from '@angular/core';
 
 export class HollandCodeComponent implements OnInit {
 
+    @Input() title: any;
     @Input() data: any;
     @Input() footer: any;
 

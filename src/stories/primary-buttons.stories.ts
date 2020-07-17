@@ -1,7 +1,6 @@
-import { action } from '@storybook/addon-actions';
 import { ButtonComponent } from '../app/components/button.component';
 import primarybuttons from 'raw-loader!./primarybuttons.markdown';
-import { object, select, text, boolean, withKnobs } from '@storybook/addon-knobs';
+import { object, withKnobs } from '@storybook/addon-knobs';
 
 export default {
     title: 'Primary Buttons',
@@ -24,13 +23,10 @@ let buttons = [
     },
 ]
 
-let x = {'buttons': buttons};
-
 export const PrimaryButton = () => ({
     component: ButtonComponent,
     props: {
-        text: text('text', 'Hello'),
-        buttons: x
+        buttons: object('Buttons', buttons, 'id-primary')
     },
 })
 

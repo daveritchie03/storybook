@@ -1,6 +1,6 @@
 import { SearchComponent } from '../app/components/search.component';
 import searchfield from 'raw-loader!./searchfield.markdown';
-import { withKnobs, object } from '@storybook/addon-knobs';
+import { withKnobs, object, text } from '@storybook/addon-knobs';
 
 export default {
     title: 'Search Component',
@@ -9,7 +9,10 @@ export default {
 };
 
 export const SearchField = () => ({
-    component: SearchComponent
+    component: SearchComponent,
+    props: {
+        search_text: text('Search', 'Hey', 'Search Field')
+    }
 })
 
 SearchField.story = {

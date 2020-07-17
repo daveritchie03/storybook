@@ -4,8 +4,8 @@ import { Component, Input, OnInit } from '@angular/core';
     selector: 'app-careerprofile',
     template: `
     <div class="card margin careerprofile bg-pink text-white border-radius">
-        <div style="margin-bottom: 2%">
-            <h4>Career Profile</h4>
+        <div>
+            <h4>{{title}}</h4>
         </div>
         <div>
             <table>
@@ -22,6 +22,7 @@ import { Component, Input, OnInit } from '@angular/core';
 
 export class CareerProfileComponent implements OnInit {
 
+    @Input() title: any;
     @Input() data: any;
 
     ngOnInit() {

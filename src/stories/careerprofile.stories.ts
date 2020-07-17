@@ -1,6 +1,6 @@
 import { CareerProfileComponent } from '../app/components/careerprofile.component';
 import careerprofile from 'raw-loader!./careerprofile.markdown';
-import { withKnobs, object } from '@storybook/addon-knobs';
+import { withKnobs, object, text } from '@storybook/addon-knobs';
 
 export default ({
     title: 'Career Profile',
@@ -8,6 +8,7 @@ export default ({
     component: CareerProfileComponent
 })
 
+let title = 'Career profile';
 let stats = [
     {
         number: 9,
@@ -30,7 +31,8 @@ let stats = [
 export const CareerProfile = () => ({
     component: CareerProfileComponent,
     props: {
-        data: stats
+        title: text('Title', title, 'Title'),
+        data: object('Data', stats, 'Data')
     }
 })
 
