@@ -2,6 +2,8 @@ import { action } from '@storybook/addon-actions';
 import { ButtonComponent } from '../app/components/button.component';
 import backbutton from 'raw-loader!./backbutton.markdown';
 import { withKnobs, object } from '@storybook/addon-knobs';
+import { linkTo } from '@storybook/addon-links';
+
 
 export default {
     title: 'Back Buttons',
@@ -19,7 +21,8 @@ let buttons = [
 export const BackButton = () => ({
     component: ButtonComponent,
     props: {
-        buttons: object('Buttons', buttons, 'id-back')
+        buttons: object('Buttons', buttons, 'id-back'),
+        onClick: action('clicked')
     },
 })
 

@@ -1,6 +1,7 @@
 import { ButtonComponent } from '../app/components/button.component';
 import tertiarybuttons from 'raw-loader!./tertiarybuttons.markdown';
 import { withKnobs, object } from '@storybook/addon-knobs';
+import { action } from '@storybook/addon-actions';
 
 export default {
     title: 'Tertiary Buttons',
@@ -26,7 +27,8 @@ let buttons = [
 export const TertiaryButton = () => ({
     component: ButtonComponent,
     props: {
-        buttons: object('Buttons', buttons, 'id-tertiary')
+        buttons: object('Buttons', buttons, 'id-tertiary'),
+        onClick: action('Tertiary buttons')
     },
 })
 

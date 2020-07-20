@@ -19,7 +19,8 @@ let buttons = [
 export const NextButton = () => ({
     component: ButtonComponent,
     props: {
-        buttons: object('Buttons', buttons, 'id-next')
+        buttons: object('Buttons', buttons, 'id-next'),
+        onClick: action('Next button')
     },
 })
 

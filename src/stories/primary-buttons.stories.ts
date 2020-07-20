@@ -1,6 +1,7 @@
 import { ButtonComponent } from '../app/components/button.component';
 import primarybuttons from 'raw-loader!./primarybuttons.markdown';
 import { object, withKnobs } from '@storybook/addon-knobs';
+import { action } from '@storybook/addon-actions';
 
 export default {
     title: 'Primary Buttons',
@@ -26,7 +27,8 @@ let buttons = [
 export const PrimaryButton = () => ({
     component: ButtonComponent,
     props: {
-        buttons: object('Buttons', buttons, 'id-primary')
+        buttons: object('Buttons', buttons, 'id-primary'),
+        onClick: action('Primary Button')
     },
 })
 
